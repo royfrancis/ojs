@@ -26,7 +26,7 @@ format: revealjs
 ## Notebook in the cloud
 
 ::: {.columns}
-::: {.column width="60%" .fragment}
+::: {.column width="60%"}
 
 ![](assets/notebook-in-the-cloud.jpg)
 
@@ -156,13 +156,11 @@ data_hdi = [
 
 ::: {.columns}
 ::: {.column width=50%}
-::: {.fragment}
 
 ```{ojs}
 viewof table_a = Inputs.table(data_hdi)
 ```
 
-:::
 ::: {.fragment}
 
 ```{ojs}
@@ -238,7 +236,7 @@ ojsdata_filtered = ojsdata.filter(d => d.species.includes(grp))
 viewof filtered_table = Inputs.table(ojsdata_filtered)
 ```
 
-## Scatterplot
+## Plotting
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -330,7 +328,7 @@ ojsdata_aq
 :::
 :::
 
-[[Introducing Arquero](https://observablehq.com/\@uwdata/introducing-arquero)](.small)
+[[Introducing Arquero](https://observablehq.com/@uwdata/introducing-arquero)]{.small}
 
 ## Summary
 
@@ -339,27 +337,23 @@ ojsdata_aq
 ::: {.columns}
 ::: {.column width=50% .fragment}
 
-{{< fa check >}}  Reactive runtime
-{{< fa check >}} Interactive visualization
-{{< fa check >}} Open source
-{{< fa check >}} Hosted notebooks at observablehq
+{{< fa check >}}  Reactive runtime  
+{{< fa check >}} Interactive visualization  
+{{< fa check >}} Open source  
+{{< fa check >}} Hosted notebooks at observablehq  
 
 :::
 ::: {.column width=50% .fragment}
 
-{{< fa exclamation-circle >}} Javascript and JSON format
-{{< fa exclamation-circle >}} Code does not necessarily run top to bottom
-{{< fa exclamation-circle >}} Pages need to be served
-{{< fa exclamation-circle >}} Large data sizes
-{{< fa exclamation-circle >}} Saving as static images
-{{< fa exclamation-circle >}} Upstream dependencies and stability
+{{< fa exclamation-circle >}} Javascript and JSON format  
+{{< fa exclamation-circle >}} Code does not necessarily run top to bottom  
+{{< fa exclamation-circle >}} Pages need to be served  
+{{< fa exclamation-circle >}} Large data sizes  
+{{< fa exclamation-circle >}} Saving as static images  
+{{< fa exclamation-circle >}} Upstream dependencies and stability  
 
 :::
 :::
-
-
-
-
 
 ##  {background-image="../../assets/images/home.webp"}
 

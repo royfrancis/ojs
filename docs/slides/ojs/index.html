@@ -250,7 +250,7 @@
 <section id="notebook-in-the-cloud" class="slide level2">
 <h2>Notebook in the cloud</h2>
 <div class="columns">
-<div class="column fragment" style="width:60%;">
+<div class="column" style="width:60%;">
 <p><img data-src="assets/notebook-in-the-cloud.jpg"></p>
 </div><div class="column fragment" style="width:40%;">
 <ul>
@@ -385,19 +385,17 @@
 </div>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3" data-startfrom="161" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 160;"><span id="cb3-161"><a></a>viewof table_a <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">table</span>(data_hdi)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3" data-startfrom="160" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 159;"><span id="cb3-160"><a></a>viewof table_a <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">table</span>(data_hdi)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-</div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" data-startfrom="168" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 167;"><span id="cb4-168"><a></a>viewof name <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">text</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Name"</span><span class="op">,</span> <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"What’s your name?"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4" data-startfrom="166" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 165;"><span id="cb4-166"><a></a>viewof name <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">text</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Name"</span><span class="op">,</span> <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"What’s your name?"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="declaration">
 
@@ -409,7 +407,7 @@
 </div><div class="column" style="width:50%;">
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" data-startfrom="179" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 178;"><span id="cb5-179"><a></a>viewof hdi <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="fl">0.90</span><span class="op">,</span> <span class="fl">1.00</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.98</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"HDI"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5" data-startfrom="177" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 176;"><span id="cb5-177"><a></a>viewof hdi <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="fl">0.90</span><span class="op">,</span> <span class="fl">1.00</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.98</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"HDI"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="declaration">
 
@@ -420,7 +418,7 @@
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" data-startfrom="188" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 187;"><span id="cb6-188"><a></a>viewof clicks <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Click me"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6" data-startfrom="186" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 185;"><span id="cb6-186"><a></a>viewof clicks <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Click me"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-5" data-nodetype="declaration">
 
@@ -431,7 +429,7 @@
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7" data-startfrom="196" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 195;"><span id="cb7-196"><a></a>viewof dflavors <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">"salty"</span><span class="op">,</span> <span class="st">"sweet"</span><span class="op">,</span> <span class="st">"bitter"</span><span class="op">,</span> <span class="st">"sour"</span><span class="op">,</span> <span class="st">"umami"</span>]<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Flavors"</span><span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">false</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7" data-startfrom="194" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 193;"><span id="cb7-194"><a></a>viewof dflavors <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">"salty"</span><span class="op">,</span> <span class="st">"sweet"</span><span class="op">,</span> <span class="st">"bitter"</span><span class="op">,</span> <span class="st">"sour"</span><span class="op">,</span> <span class="st">"umami"</span>]<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Flavors"</span><span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">false</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-6" data-nodetype="declaration">
 
@@ -458,7 +456,7 @@
 </div>
 <p>Transpose JS object.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" data-startfrom="220" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 219;"><span id="cb9-220"><a></a>ojsdata <span class="op">=</span> <span class="fu">transpose</span>(ojsd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9" data-startfrom="218" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 217;"><span id="cb9-218"><a></a>ojsdata <span class="op">=</span> <span class="fu">transpose</span>(ojsd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-7" data-nodetype="declaration">
 
@@ -467,7 +465,7 @@
 </div>
 <p>Raw JSON object.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10" data-startfrom="226" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 225;"><span id="cb10-226"><a></a>ojsdata</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10" data-startfrom="224" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 223;"><span id="cb10-224"><a></a>ojsdata</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-8" data-nodetype="expression">
 
@@ -478,7 +476,7 @@
 <section id="filtering" class="slide level2">
 <h2>Filtering</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11" data-startfrom="232" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 231;"><span id="cb11-232"><a></a>viewof grp <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">"setosa"</span><span class="op">,</span> <span class="st">"versicolor"</span><span class="op">,</span> <span class="st">"virginica"</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> [<span class="st">"setosa"</span>]<span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Species"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11" data-startfrom="230" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 229;"><span id="cb11-230"><a></a>viewof grp <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">"setosa"</span><span class="op">,</span> <span class="st">"versicolor"</span><span class="op">,</span> <span class="st">"virginica"</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> [<span class="st">"setosa"</span>]<span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Species"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-9" data-nodetype="declaration">
 
@@ -486,8 +484,8 @@
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12" data-startfrom="237" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 236;"><span id="cb12-237"><a></a>ojsdata_filtered <span class="op">=</span> ojsdata<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">species</span><span class="op">.</span><span class="fu">includes</span>(grp))</span>
-<span id="cb12-238"><a></a>viewof filtered_table <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">table</span>(ojsdata_filtered)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12" data-startfrom="235" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 234;"><span id="cb12-235"><a></a>ojsdata_filtered <span class="op">=</span> ojsdata<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">species</span><span class="op">.</span><span class="fu">includes</span>(grp))</span>
+<span id="cb12-236"><a></a>viewof filtered_table <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">table</span>(ojsdata_filtered)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-10-1" data-nodetype="declaration">
@@ -504,13 +502,13 @@
 </div>
 </div>
 </section>
-<section id="scatterplot" class="slide level2">
-<h2>Scatterplot</h2>
+<section id="plotting" class="slide level2">
+<h2>Plotting</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13" data-startfrom="247" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 246;"><span id="cb13-247"><a></a>viewof x <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(<span class="bu">Object</span><span class="op">.</span><span class="fu">keys</span>(ojsdata[<span class="dv">0</span>])<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="st">"sepal_length"</span><span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"X axis"</span>})</span>
-<span id="cb13-248"><a></a>viewof y <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(<span class="bu">Object</span><span class="op">.</span><span class="fu">keys</span>(ojsdata[<span class="dv">0</span>])<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="st">"sepal_width"</span><span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Y axis"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13" data-startfrom="245" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 244;"><span id="cb13-245"><a></a>viewof x <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(<span class="bu">Object</span><span class="op">.</span><span class="fu">keys</span>(ojsdata[<span class="dv">0</span>])<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="st">"sepal_length"</span><span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"X axis"</span>})</span>
+<span id="cb13-246"><a></a>viewof y <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(<span class="bu">Object</span><span class="op">.</span><span class="fu">keys</span>(ojsdata[<span class="dv">0</span>])<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="st">"sepal_width"</span><span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Y axis"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-11-1" data-nodetype="declaration">
@@ -527,18 +525,18 @@
 </div>
 </div>
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb14" data-startfrom="252" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 251;"><span id="cb14-252"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb14-253"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb14-254"><a></a>    Plot<span class="op">.</span><span class="fu">dot</span>(ojsdata<span class="op">,</span> {</span>
-<span id="cb14-255"><a></a>      <span class="dt">x</span><span class="op">:</span> x<span class="op">,</span></span>
-<span id="cb14-256"><a></a>      <span class="dt">y</span><span class="op">:</span> y<span class="op">,</span></span>
-<span id="cb14-257"><a></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
-<span id="cb14-258"><a></a>      <span class="dt">title</span><span class="op">:</span> (d) <span class="kw">=&gt;</span></span>
-<span id="cb14-259"><a></a>        <span class="vs">`</span><span class="sc">${</span>d<span class="op">.</span><span class="at">species</span><span class="sc">}</span><span class="vs"> </span><span class="sc">\n</span><span class="vs"> Petal length: </span><span class="sc">${</span>d<span class="op">.</span><span class="at">petal_length</span><span class="sc">}</span><span class="vs"> </span><span class="sc">\n</span><span class="vs"> Sepal length: </span><span class="sc">${</span>d<span class="op">.</span><span class="at">sepal_length</span><span class="sc">}</span><span class="vs">`</span></span>
-<span id="cb14-260"><a></a>    })</span>
-<span id="cb14-261"><a></a>  ]<span class="op">,</span></span>
-<span id="cb14-262"><a></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb14-263"><a></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14" data-startfrom="250" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 249;"><span id="cb14-250"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb14-251"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb14-252"><a></a>    Plot<span class="op">.</span><span class="fu">dot</span>(ojsdata<span class="op">,</span> {</span>
+<span id="cb14-253"><a></a>      <span class="dt">x</span><span class="op">:</span> x<span class="op">,</span></span>
+<span id="cb14-254"><a></a>      <span class="dt">y</span><span class="op">:</span> y<span class="op">,</span></span>
+<span id="cb14-255"><a></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
+<span id="cb14-256"><a></a>      <span class="dt">title</span><span class="op">:</span> (d) <span class="kw">=&gt;</span></span>
+<span id="cb14-257"><a></a>        <span class="vs">`</span><span class="sc">${</span>d<span class="op">.</span><span class="at">species</span><span class="sc">}</span><span class="vs"> </span><span class="sc">\n</span><span class="vs"> Petal length: </span><span class="sc">${</span>d<span class="op">.</span><span class="at">petal_length</span><span class="sc">}</span><span class="vs"> </span><span class="sc">\n</span><span class="vs"> Sepal length: </span><span class="sc">${</span>d<span class="op">.</span><span class="at">sepal_length</span><span class="sc">}</span><span class="vs">`</span></span>
+<span id="cb14-258"><a></a>    })</span>
+<span id="cb14-259"><a></a>  ]<span class="op">,</span></span>
+<span id="cb14-260"><a></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb14-261"><a></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-12" data-nodetype="expression">
 
@@ -547,18 +545,18 @@
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-eval="true">
-<div class="sourceCode cell-code hidden" id="cb15" data-startfrom="272" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 271;"><span id="cb15-272"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb15-273"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb15-274"><a></a>    Plot<span class="op">.</span><span class="fu">dot</span>(ojsdata<span class="op">,</span> {</span>
-<span id="cb15-275"><a></a>      <span class="dt">x</span><span class="op">:</span> x<span class="op">,</span></span>
-<span id="cb15-276"><a></a>      <span class="dt">y</span><span class="op">:</span> y<span class="op">,</span></span>
-<span id="cb15-277"><a></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
-<span id="cb15-278"><a></a>      <span class="dt">title</span><span class="op">:</span> (d) <span class="kw">=&gt;</span></span>
-<span id="cb15-279"><a></a>        <span class="vs">`</span><span class="sc">${</span>d<span class="op">.</span><span class="at">species</span><span class="sc">}</span><span class="vs"> </span><span class="sc">\n</span><span class="vs"> Petal length: </span><span class="sc">${</span>d<span class="op">.</span><span class="at">petal_length</span><span class="sc">}</span><span class="vs"> </span><span class="sc">\n</span><span class="vs"> Sepal length: </span><span class="sc">${</span>d<span class="op">.</span><span class="at">sepal_length</span><span class="sc">}</span><span class="vs">`</span></span>
-<span id="cb15-280"><a></a>    })</span>
-<span id="cb15-281"><a></a>  ]<span class="op">,</span></span>
-<span id="cb15-282"><a></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb15-283"><a></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb15" data-startfrom="270" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 269;"><span id="cb15-270"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb15-271"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb15-272"><a></a>    Plot<span class="op">.</span><span class="fu">dot</span>(ojsdata<span class="op">,</span> {</span>
+<span id="cb15-273"><a></a>      <span class="dt">x</span><span class="op">:</span> x<span class="op">,</span></span>
+<span id="cb15-274"><a></a>      <span class="dt">y</span><span class="op">:</span> y<span class="op">,</span></span>
+<span id="cb15-275"><a></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
+<span id="cb15-276"><a></a>      <span class="dt">title</span><span class="op">:</span> (d) <span class="kw">=&gt;</span></span>
+<span id="cb15-277"><a></a>        <span class="vs">`</span><span class="sc">${</span>d<span class="op">.</span><span class="at">species</span><span class="sc">}</span><span class="vs"> </span><span class="sc">\n</span><span class="vs"> Petal length: </span><span class="sc">${</span>d<span class="op">.</span><span class="at">petal_length</span><span class="sc">}</span><span class="vs"> </span><span class="sc">\n</span><span class="vs"> Sepal length: </span><span class="sc">${</span>d<span class="op">.</span><span class="at">sepal_length</span><span class="sc">}</span><span class="vs">`</span></span>
+<span id="cb15-278"><a></a>    })</span>
+<span id="cb15-279"><a></a>  ]<span class="op">,</span></span>
+<span id="cb15-280"><a></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb15-281"><a></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-13" data-nodetype="expression">
 
@@ -572,17 +570,17 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb16" data-startfrom="297" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 296;"><span id="cb16-297"><a></a><span class="im">import</span> { aq<span class="op">,</span> op } <span class="im">from</span> <span class="st">'@uwdata/arquero'</span></span>
-<span id="cb16-298"><a></a>ojsdata_aq <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(ojsdata)</span>
-<span id="cb16-299"><a></a></span>
-<span id="cb16-300"><a></a>ojsdata_aq</span>
-<span id="cb16-301"><a></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">'species'</span>)</span>
-<span id="cb16-302"><a></a>  <span class="op">.</span><span class="fu">filter</span>(p <span class="kw">=&gt;</span> p<span class="op">.</span><span class="at">sepal_length</span> <span class="op">&gt;</span> <span class="dv">5</span>)</span>
-<span id="cb16-303"><a></a>  <span class="op">.</span><span class="fu">rollup</span>({</span>
-<span id="cb16-304"><a></a>    <span class="dt">count</span><span class="op">:</span> op<span class="op">.</span><span class="fu">count</span>()<span class="op">,</span></span>
-<span id="cb16-305"><a></a>    <span class="dt">avg_mass</span><span class="op">:</span> op<span class="op">.</span><span class="fu">average</span>(<span class="st">'sepal_length'</span>)</span>
-<span id="cb16-306"><a></a>   })</span>
-<span id="cb16-307"><a></a>  <span class="op">.</span><span class="fu">view</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16" data-startfrom="295" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 294;"><span id="cb16-295"><a></a><span class="im">import</span> { aq<span class="op">,</span> op } <span class="im">from</span> <span class="st">'@uwdata/arquero'</span></span>
+<span id="cb16-296"><a></a>ojsdata_aq <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(ojsdata)</span>
+<span id="cb16-297"><a></a></span>
+<span id="cb16-298"><a></a>ojsdata_aq</span>
+<span id="cb16-299"><a></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">'species'</span>)</span>
+<span id="cb16-300"><a></a>  <span class="op">.</span><span class="fu">filter</span>(p <span class="kw">=&gt;</span> p<span class="op">.</span><span class="at">sepal_length</span> <span class="op">&gt;</span> <span class="dv">5</span>)</span>
+<span id="cb16-301"><a></a>  <span class="op">.</span><span class="fu">rollup</span>({</span>
+<span id="cb16-302"><a></a>    <span class="dt">count</span><span class="op">:</span> op<span class="op">.</span><span class="fu">count</span>()<span class="op">,</span></span>
+<span id="cb16-303"><a></a>    <span class="dt">avg_mass</span><span class="op">:</span> op<span class="op">.</span><span class="fu">average</span>(<span class="st">'sepal_length'</span>)</span>
+<span id="cb16-304"><a></a>   })</span>
+<span id="cb16-305"><a></a>  <span class="op">.</span><span class="fu">view</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-14-1" data-nodetype="declaration">
@@ -607,17 +605,17 @@
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-eval="true">
-<div class="sourceCode cell-code hidden" id="cb17" data-startfrom="317" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 316;"><span id="cb17-317"><a></a><span class="im">import</span> { aq<span class="op">,</span> op } <span class="im">from</span> <span class="st">'@uwdata/arquero'</span></span>
-<span id="cb17-318"><a></a>ojsdata_aq <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(ojsdata)</span>
-<span id="cb17-319"><a></a></span>
-<span id="cb17-320"><a></a>ojsdata_aq</span>
-<span id="cb17-321"><a></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">'species'</span>)</span>
-<span id="cb17-322"><a></a>  <span class="op">.</span><span class="fu">filter</span>(p <span class="kw">=&gt;</span> p<span class="op">.</span><span class="at">sepal_length</span> <span class="op">&gt;</span> <span class="dv">5</span>)</span>
-<span id="cb17-323"><a></a>  <span class="op">.</span><span class="fu">rollup</span>({</span>
-<span id="cb17-324"><a></a>    <span class="dt">count</span><span class="op">:</span> op<span class="op">.</span><span class="fu">count</span>()<span class="op">,</span></span>
-<span id="cb17-325"><a></a>    <span class="dt">avg_mass</span><span class="op">:</span> op<span class="op">.</span><span class="fu">average</span>(<span class="st">'sepal_length'</span>)</span>
-<span id="cb17-326"><a></a>   })</span>
-<span id="cb17-327"><a></a>  <span class="op">.</span><span class="fu">view</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb17" data-startfrom="315" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 314;"><span id="cb17-315"><a></a><span class="im">import</span> { aq<span class="op">,</span> op } <span class="im">from</span> <span class="st">'@uwdata/arquero'</span></span>
+<span id="cb17-316"><a></a>ojsdata_aq <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(ojsdata)</span>
+<span id="cb17-317"><a></a></span>
+<span id="cb17-318"><a></a>ojsdata_aq</span>
+<span id="cb17-319"><a></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">'species'</span>)</span>
+<span id="cb17-320"><a></a>  <span class="op">.</span><span class="fu">filter</span>(p <span class="kw">=&gt;</span> p<span class="op">.</span><span class="at">sepal_length</span> <span class="op">&gt;</span> <span class="dv">5</span>)</span>
+<span id="cb17-321"><a></a>  <span class="op">.</span><span class="fu">rollup</span>({</span>
+<span id="cb17-322"><a></a>    <span class="dt">count</span><span class="op">:</span> op<span class="op">.</span><span class="fu">count</span>()<span class="op">,</span></span>
+<span id="cb17-323"><a></a>    <span class="dt">avg_mass</span><span class="op">:</span> op<span class="op">.</span><span class="fu">average</span>(<span class="st">'sepal_length'</span>)</span>
+<span id="cb17-324"><a></a>   })</span>
+<span id="cb17-325"><a></a>  <span class="op">.</span><span class="fu">view</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-15-1" data-nodetype="declaration">
@@ -641,16 +639,24 @@
 </div>
 </div>
 </div></div>
-<p><a href=".small">[Introducing Arquero](https://observablehq.com/@uwdata/introducing-arquero)</a></p>
+<p><span class="small"><a href="https://observablehq.com/@uwdata/introducing-arquero">Introducing Arquero</a></span></p>
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
 <p><span class="large"><strong>Observable</strong>: Javascript library for data visualization</span></p>
 <div class="columns">
 <div class="column fragment" style="width:50%;">
-<p><i class="fa-solid fa-check" aria-label="check"></i> Reactive runtime <i class="fa-solid fa-check" aria-label="check"></i> Interactive visualization <i class="fa-solid fa-check" aria-label="check"></i> Open source <i class="fa-solid fa-check" aria-label="check"></i> Hosted notebooks at observablehq</p>
+<p><i class="fa-solid fa-check" aria-label="check"></i> Reactive runtime<br>
+<i class="fa-solid fa-check" aria-label="check"></i> Interactive visualization<br>
+<i class="fa-solid fa-check" aria-label="check"></i> Open source<br>
+<i class="fa-solid fa-check" aria-label="check"></i> Hosted notebooks at observablehq</p>
 </div><div class="column fragment" style="width:50%;">
-<p><i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Javascript and JSON format <i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Code does not necessarily run top to bottom <i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Pages need to be served <i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Large data sizes <i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Saving as static images <i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Upstream dependencies and stability</p>
+<p><i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Javascript and JSON format<br>
+<i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Code does not necessarily run top to bottom<br>
+<i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Pages need to be served<br>
+<i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Large data sizes<br>
+<i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Saving as static images<br>
+<i class="fa-solid fa-exclamation-circle" aria-label="exclamation-circle"></i> Upstream dependencies and stability</p>
 </div></div>
 </section>
 <section id="section" class="slide level2" data-background-image="../../assets/images/home.webp">
