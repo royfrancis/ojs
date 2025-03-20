@@ -1,0 +1,379 @@
+---
+title: "Observable"
+author: "Roy Francis"
+subtitle: "A javascript library for data visualization"
+format: revealjs
+---
+
+## Building blocks
+
+![](assets/ojs-documentation.jpg)
+
+[[Documentation](https://observablehq.com/documentation/)]{.small}
+
+## OJS Plot
+
+![](assets/ojs-plot.jpg)
+
+[[OJS Plots](https://observablehq.com/plot/)]{.small}
+
+## Notebook
+
+![](assets/ojs-notebook.jpg)
+
+[[Notebook](https://observablehq.com/documentation/notebooks/) [ObservableHQ](https://observablehq.com)]{.small}
+
+## Notebook in the cloud
+
+::: {.columns}
+::: {.column width="60%" .fragment}
+
+![](assets/notebook-in-the-cloud.jpg)
+
+:::
+::: {.column width="40%" .fragment}
+
+- Fast, reactive and interactive
+- Only one line per chunk
+- Adding and removing chunks is a pain
+ 
+[Learning observable](https://observablehq.com/@observablehq/learning-observable-introduction)
+
+:::
+:::
+
+::: {.notes}
+
+Demo notebooks and interactive tables
+
+<https://observablehq.com/d/adbe23ce2f64292d>
+
+:::
+
+## OJS in Quarto
+
+- Core libraries (stdlib, inputs, plot) are included in Quarto
+- Use `ojs` chunks
+
+```{{ojs}}
+```
+
+. . .
+
+- Import other libraries as needed
+
+`import {aq, op} from "@uwdata/arquero"`
+
+. . .
+
+- OJS does not work when opening a static local HTML file in the browser. It requires a live server. For local viewing, use `quarto preview`, `python -m http.server` etc. It will just work when hosted on a server/hosting service such as Github pages etc.
+
+[[OJS in Quarto](https://quarto.org/docs/interactive/ojs/index.html)]{.small}
+
+## Widgets
+
+```{ojs}
+//| echo: false
+
+data_hdi = [
+  {
+    name: "Switzerland",
+    continent: "Europe",
+    hdi: "0.962"
+  },
+  {
+    name: "Norway",
+    continent: "Europe",
+    hdi: "0.961"
+  },
+  {
+    name: "Iceland",
+    continent: "Europe",
+    hdi: "0.959"
+  },
+  {
+    name: "Hong Kong",
+    continent: "Asia",
+    hdi: "0.952"
+  },
+  {
+    name: "Australia",
+    continent: "Oceania",
+    hdi: "0.951"
+  },
+  {
+    name: "Denmark",
+    continent: "Europe",
+    hdi: "0.948"
+  },
+  {
+    name: "Sweden",
+    continent: "Europe",
+    hdi: "0.947"
+  },
+  {
+    name: "Ireland",
+    continent: "Europe",
+    hdi: "0.945"
+  },
+  {
+    name: "Germany",
+    continent: "Europe",
+    hdi: "0.942"
+  },
+  {
+    name: "Netherlands",
+    continent: "Europe",
+    hdi: "0.941"
+  },
+  {
+    name: "Finland",
+    continent: "Europe",
+    hdi: "0.940"
+  },
+  {
+    name: "Singapore",
+    continent: "Asia",
+    hdi: "0.939"
+  },
+  {
+    name: "Belgium",
+    continent: "Europe",
+    hdi: "0.937"
+  },
+  {
+    name: "New Zealand",
+    continent: "Oceania",
+    hdi: "0.937"
+  },
+  {
+    name: "Canada",
+    continent: "North America",
+    hdi: "0.936"
+  }
+]
+```
+
+::: {.columns}
+::: {.column width=50%}
+::: {.fragment}
+
+```{ojs}
+viewof table_a = Inputs.table(data_hdi)
+```
+
+:::
+::: {.fragment}
+
+```{ojs}
+viewof name = Inputs.text({label: "Name", placeholder: "What’s your name?"})
+```
+
+Your input is ${name}
+:::
+:::
+
+::: {.column width=50%}
+::: {.fragment}
+
+```{ojs}
+viewof hdi = Inputs.range([0.90, 1.00], {value: 0.98, step: 0.01, label: "HDI"})
+```
+
+Selected value is ${hdi.toFixed(3)}
+
+:::
+::: {.fragment}
+
+```{ojs}
+viewof clicks = Inputs.button("Click me")
+```
+
+Number of clicks: ${clicks}
+
+:::
+::: {.fragment}
+```{ojs}
+viewof dflavors = Inputs.select(["salty", "sweet", "bitter", "sour", "umami"], {label: "Flavors", multiple: false})
+```
+
+Selected item: ${dflavors}
+:::
+:::
+:::
+
+[[OJS Inputs](https://observablehq.com/documentation/inputs/overview)]{.small}
+
+## OJS and R
+
+Exchange data between R and OJS
+
+```{r}
+#| filename: R code
+irism <- iris
+colnames(irism) <- gsub("[.]", "_", tolower(colnames(irism)))
+ojs_define(ojsd = irism)
+```
+
+Transpose JS object.
+
+```{ojs}
+ojsdata = transpose(ojsd)
+```
+
+Raw JSON object.
+
+```{ojs}
+ojsdata
+```
+
+## Filtering
+
+```{ojs}
+viewof grp = Inputs.select(["setosa", "versicolor", "virginica"], {value: ["setosa"], multiple: false, label: "Species"})
+```
+
+```{ojs}
+ojsdata_filtered = ojsdata.filter(d => d.species.includes(grp))
+viewof filtered_table = Inputs.table(ojsdata_filtered)
+```
+
+## Plotting
+
+## Scatterplot
+
+::: {.columns}
+::: {.column width="50%"}
+
+```{ojs}
+viewof x = Inputs.select(Object.keys(ojsdata[0]), {value: "sepal_length", multiple: false, label: "X axis"})
+viewof y = Inputs.select(Object.keys(ojsdata[0]), {value: "sepal_width", multiple: false, label: "Y axis"})
+```
+
+```{ojs}
+//| eval: false
+Plot.plot({
+  marks: [
+    Plot.dot(ojsdata, {
+      x: x,
+      y: y,
+      fill: "species",
+      title: (d) =>
+        `${d.species} \n Petal length: ${d.petal_length} \n Sepal length: ${d.sepal_length}`
+    })
+  ],
+  grid: true
+})
+```
+
+:::
+::: {.column width="50%"}
+
+```{ojs}
+//| eval: true
+//| echo: false
+Plot.plot({
+  marks: [
+    Plot.dot(ojsdata, {
+      x: x,
+      y: y,
+      fill: "species",
+      title: (d) =>
+        `${d.species} \n Petal length: ${d.petal_length} \n Sepal length: ${d.sepal_length}`
+    })
+  ],
+  grid: true
+})
+```
+
+:::
+:::
+
+## Arquero
+
+::: {.columns}
+::: {.column width="50%"}
+
+```{ojs}
+//| eval: false
+import { aq, op } from '@uwdata/arquero'
+ojsdata_aq = aq.from(ojsdata)
+
+ojsdata_aq
+  .groupby('species')
+  .filter(p => p.sepal_length > 5)
+  .rollup({
+    count: op.count(),
+    avg_mass: op.average('sepal_length')
+   })
+  .view()
+```
+
+:::
+::: {.column width="50%"}
+
+```{ojs}
+//| eval: true
+//| echo: false
+
+import { aq, op } from '@uwdata/arquero'
+ojsdata_aq = aq.from(ojsdata)
+
+ojsdata_aq
+  .groupby('species')
+  .filter(p => p.sepal_length > 5)
+  .rollup({
+    count: op.count(),
+    avg_mass: op.average('sepal_length')
+   })
+  .view()
+```
+
+:::
+:::
+
+[[Introducing Arquero](https://observablehq.com/\@uwdata/introducing-arquero)](.small)
+
+## Summary
+
+[**Observable**: Javascript library for data visualization]{.large}
+
+::: {.columns}
+::: {.column width=50% .fragment}
+
+{{< fa check >}}  Reactive runtime  
+{{< fa check >}} Interactive visualization  
+{{< fa check >}} Open source  
+{{< fa check >}} Hosted notebooks at observablehq  
+
+:::
+::: {.column width=50% .fragment}
+
+{{< fa exclamation-circle >}} Javascript and JSON format  
+{{< fa exclamation-circle >}} Code does not necessarily run top to bottom  
+{{< fa exclamation-circle >}} Pages need to be served  
+{{< fa exclamation-circle >}} Large data sizes  
+{{< fa exclamation-circle >}} Saving as static images  
+{{< fa exclamation-circle >}} Upstream dependencies and stability  
+
+:::
+:::
+
+
+
+
+
+##  {background-image="../../assets/images/home.webp"}
+
+::: {.v-center .center}
+::: {}
+
+[Thank you!]{.largest}
+
+[Questions?]{.larger}
+
+{{< meta current_year >}} • Roy Francis
+
+:::
+:::
+

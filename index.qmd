@@ -1,0 +1,19 @@
+---
+pagetitle: "OJS"
+subtitle: ""
+toc: false
+date: ""
+sidebar: false
+image: "assets/images/seo.webp"
+format:
+  html:
+    css: "assets/css/home.css"
+    number-sections: false
+    title-block-banner: false
+    page-layout: full
+    anchor-sections: false
+execute:
+  freeze: false
+---
+
+[[OJS Slides](slides/ojs/index.qmd)]{.large}
