@@ -36,7 +36,7 @@ format: revealjs
 - Fast, reactive and interactive
 - Only one line per chunk
 - Adding and removing chunks is a pain
- 
+
 [Learning observable](https://observablehq.com/@observablehq/learning-observable-introduction)
 
 :::
@@ -238,8 +238,6 @@ ojsdata_filtered = ojsdata.filter(d => d.species.includes(grp))
 viewof filtered_table = Inputs.table(ojsdata_filtered)
 ```
 
-## Plotting
-
 ## Scatterplot
 
 ::: {.columns}
@@ -341,20 +339,20 @@ ojsdata_aq
 ::: {.columns}
 ::: {.column width=50% .fragment}
 
-{{< fa check >}}  Reactive runtime  
-{{< fa check >}} Interactive visualization  
-{{< fa check >}} Open source  
-{{< fa check >}} Hosted notebooks at observablehq  
+{{< fa check >}}  Reactive runtime
+{{< fa check >}} Interactive visualization
+{{< fa check >}} Open source
+{{< fa check >}} Hosted notebooks at observablehq
 
 :::
 ::: {.column width=50% .fragment}
 
-{{< fa exclamation-circle >}} Javascript and JSON format  
-{{< fa exclamation-circle >}} Code does not necessarily run top to bottom  
-{{< fa exclamation-circle >}} Pages need to be served  
-{{< fa exclamation-circle >}} Large data sizes  
-{{< fa exclamation-circle >}} Saving as static images  
-{{< fa exclamation-circle >}} Upstream dependencies and stability  
+{{< fa exclamation-circle >}} Javascript and JSON format
+{{< fa exclamation-circle >}} Code does not necessarily run top to bottom
+{{< fa exclamation-circle >}} Pages need to be served
+{{< fa exclamation-circle >}} Large data sizes
+{{< fa exclamation-circle >}} Saving as static images
+{{< fa exclamation-circle >}} Upstream dependencies and stability
 
 :::
 :::
@@ -376,4 +374,3 @@ ojsdata_aq
 
 :::
 :::
-

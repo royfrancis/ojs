@@ -56,13 +56,6 @@
     "text": "Filtering\n\nviewof grp = Inputs.select([\"setosa\", \"versicolor\", \"virginica\"], {value: [\"setosa\"], multiple: false, label: \"Species\"})\n\n\n\n\n\n\n\nojsdata_filtered = ojsdata.filter(d =&gt; d.species.includes(grp))\nviewof filtered_table = Inputs.table(ojsdata_filtered)"
   },
   {
-    "objectID": "slides/ojs/index.html#plotting",
-    "href": "slides/ojs/index.html#plotting",
-    "title": "Observable",
-    "section": "Plotting",
-    "text": "Plotting"
-  },
-  {
     "objectID": "slides/ojs/index.html#scatterplot",
     "href": "slides/ojs/index.html#scatterplot",
     "title": "Observable",
@@ -81,7 +74,7 @@
     "href": "slides/ojs/index.html#summary",
     "title": "Observable",
     "section": "Summary",
-    "text": "Summary\nObservable: Javascript library for data visualization\n\n\n Reactive runtime\n Interactive visualization\n Open source\n Hosted notebooks at observablehq\n\n Javascript and JSON format\n Code does not necessarily run top to bottom\n Pages need to be served\n Large data sizes\n Saving as static images\n Upstream dependencies and stability"
+    "text": "Summary\nObservable: Javascript library for data visualization\n\n\n Reactive runtime  Interactive visualization  Open source  Hosted notebooks at observablehq\n\n Javascript and JSON format  Code does not necessarily run top to bottom  Pages need to be served  Large data sizes  Saving as static images  Upstream dependencies and stability"
   },
   {
     "objectID": "slides/ojs/index.html#section",
