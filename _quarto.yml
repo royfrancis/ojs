@@ -5,8 +5,6 @@ project:
 website:
   open-graph: true
   site-url: "https://royfrancis.github.io/specky/"
-  image: "assets/images/seo.webp"
-  description: "A quarto website template for courses and workshops."
   favicon: "assets/favicon.png"
   navbar:
     logo: "assets/logos/nbis-scilifelab.webp"
@@ -37,7 +35,7 @@ format:
     standalone: false
     fig-align: left
     title-block-banner: "assets/images/banner.webp"
-    subtitle: "Specky quarto theme"
+    subtitle: "ObservableJS"
     callout-icon: true
     date:  last-modified
     date-format: "DD-MMM-YYYY"
@@ -69,13 +67,13 @@ format:
       data-background-image: "/assets/images/cover.webp"
       data-background-size: "cover"
       data-background-opacity: "1"
-    subtitle: "Specky quarto theme"
+    subtitle: "ObservableJS"
     header-logo-left: /assets/logos/nbis.webp
     header-logo-left-height: 25px
-    header-logo-left-url: https://royfrancis.github.io/specky/home_contents.html
+    header-logo-left-url: https://www.royfrancis.com/ojs/slides/ojs
     header-logo-right: /assets/logos/scilifelab.webp
     header-logo-right-height: 25px
-    header-logo-right-url: https://royfrancis.github.io/specky/home_contents.html
+    header-logo-right-url: https://www.royfrancis.com/ojs/slides/ojs
     template-partials:
       - "/assets/title-slide.html"
 
