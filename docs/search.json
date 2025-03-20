@@ -70,6 +70,13 @@
     "text": "Arquero\n\n\n\nimport { aq, op } from '@uwdata/arquero'\nojsdata_aq = aq.from(ojsdata)\n\nojsdata_aq\n  .groupby('species')\n  .filter(p =&gt; p.sepal_length &gt; 5)\n  .rollup({\n    count: op.count(),\n    avg_mass: op.average('sepal_length')\n   })\n  .view()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { aq, op } from '@uwdata/arquero'\nojsdata_aq = aq.from(ojsdata)\n\nojsdata_aq\n  .groupby('species')\n  .filter(p =&gt; p.sepal_length &gt; 5)\n  .rollup({\n    count: op.count(),\n    avg_mass: op.average('sepal_length')\n   })\n  .view()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducing Arquero"
   },
   {
+    "objectID": "slides/ojs/index.html#learning",
+    "href": "slides/ojs/index.html#learning",
+    "title": "Observable",
+    "section": "Learning",
+    "text": "Learning\n\n\nLearning Observable\nPlot documentation"
+  },
+  {
     "objectID": "slides/ojs/index.html#summary",
     "href": "slides/ojs/index.html#summary",
     "title": "Observable",

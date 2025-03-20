@@ -330,6 +330,13 @@ ojsdata_aq
 
 [[Introducing Arquero](https://observablehq.com/@uwdata/introducing-arquero)]{.small}
 
+## Learning
+
+![](assets/learn.png)
+
+- [Learning Observable](https://observablehq.com/@observablehq/learning-observable-introduction)
+- [Plot documentation](https://observablehq.com/plot/getting-started)
+
 ## Summary
 
 [**Observable**: Javascript library for data visualization]{.large}
@@ -337,7 +344,7 @@ ojsdata_aq
 ::: {.columns}
 ::: {.column width=50% .fragment}
 
-{{< fa check >}}  Reactive runtime  
+{{< fa check >}} Reactive runtime  
 {{< fa check >}} Interactive visualization  
 {{< fa check >}} Open source  
 {{< fa check >}} Hosted notebooks at observablehq  
